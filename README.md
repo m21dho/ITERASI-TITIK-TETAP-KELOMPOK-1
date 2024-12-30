@@ -2,7 +2,7 @@ Tugas Mata Kuliah Metode Numerik
 METODE ITERASI TITIK TETAP
 KELOMPOK 1
 
-Fikri Hasyim Al Rasyid
+Fikri Hasyim Al Rasyid<br>
 Janumelah
 Arinda Amalia Putri
 Rika Cintia
