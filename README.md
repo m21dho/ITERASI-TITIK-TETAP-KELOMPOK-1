@@ -1,6 +1,6 @@
 Tugas Mata Kuliah Metode Numerik 
-METODE ITERASI TITIK TETAP
-KELOMPOK 1
+METODE ITERASI TITIK TETAP<br>
+KELOMPOK 1<br>
 
 Fikri Hasyim Al Rasyid<br>
 Janumelah<br>
