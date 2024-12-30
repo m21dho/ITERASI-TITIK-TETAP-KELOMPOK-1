@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fixed Point Iteration Calculator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<header class="header">
+    <h1>Metode Iterasi Titik Tetap</h1>
+</header>
+<br>
+<body>
+    <form method="post">
+        <label for="gx"><h1>g(x):</h1></label>
+        <input type="text" id="gx" name="gx" required><br>
+        
+        <label for="batas_error"><h1>Batas Error:</h1></label>
+        <input type="text" id="batas_error" name="batas_error" required><br>
+        
+        <label for="nilai_awal"><h1>Nilai Awal:</h1></label>
+        <input type="text" id="nilai_awal" name="nilai_awal" required><br>
+        
+        <input type="submit" value="Hitung">
+    </form>
+
+    {% if hasil %}
+    <h2>Hasil Iterasi Titik Tetap</h2>
+    <table border="1">
+        <tr>
+            <th>Iterasi</th>
+            <th>x0</th>
+            <th>x1</th>
+            <th>Error</th>
+        </tr>
+        {% for i, x, gx, e in hasil %}
+        <tr>
+            <td>{{ i }}</td>
+            <td>{{ '{:.7f}'.format(x) }}</td>
+            <td>{{ '{:.7f}'.format(gx) }}</td>
+            <td>{{ '{:.7f}'.format(e) }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <button class="btn" onclick="window.location.href='/'">RESET</button>
+    {% endif %}
+</body>
+</html>
