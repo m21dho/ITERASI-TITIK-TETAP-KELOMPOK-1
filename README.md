@@ -3,11 +3,11 @@ METODE ITERASI TITIK TETAP
 KELOMPOK 1
 
 Fikri Hasyim Al Rasyid<br>
-Janumelah
-Arinda Amalia Putri
-Rika Cintia
-Tanra Wija Yanti
-Muhammad Ridho
-Muhammad Aldouri
+Janumelah<br>
+Arinda Amalia Putri<br>
+Rika Cintia<br>
+Tanra Wija Yanti<br>
+Muhammad Ridho<br>
+Muhammad Aldouri<br>
 Zeldiyan Arafat
 
