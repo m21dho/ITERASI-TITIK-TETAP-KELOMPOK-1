@@ -2,10 +2,19 @@
 <html>
 <head>
     <title>Fixed Point Iteration Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <header class="header">
-    <h1>Metode Iterasi Titik Tetap</h1>
+    <div style="
+    display: flex; 
+    align-items: center;
+    text-align: center;">
+        <img src="static/logo.svg" alt="Deskripsi Gambar" style="width: 35px; height: auto; margin-right: 10px;">
+        <h1>Metode Iterasi Titik Tetap</h1>
+    </div>
 </header>
 <br>
 <body>
@@ -23,13 +32,16 @@
     </form>
 
     {% if hasil %}
-    <h2>Hasil Iterasi Titik Tetap</h2>
+    <div class="divbg" style="display: flex; align-items: center;">
+        <img src="static/abacus.png" alt="Deskripsi Gambar" style="width: 40px; height: auto; margin-right: 10px;">
+        <h2>Hasil Iterasi Titik Tetap</h2>
+    </div>
     <table border="1">
         <tr>
-            <th>Iterasi</th>
-            <th>x0</th>
-            <th>x1</th>
-            <th>Error</th>
+            <th><h1>Iterasi</h1></th>
+            <th><h1>x0</h1></th>
+            <th><h1>x1</h1></th>
+            <th><h1>Error</h1></th>
         </tr>
         {% for i, x, gx, e in hasil %}
         <tr>
